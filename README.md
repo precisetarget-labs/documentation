@@ -1,5 +1,5 @@
 
-<img src="http://assets.precisetarget.com/logos/PreciseTarget.png" width="200">
+<img src="http://assets.precisetarget.com/logos/precisetarget.png" width="200">
 
 Technical Documentation Library
 ===============================
