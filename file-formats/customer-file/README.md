@@ -4,18 +4,18 @@ This document specifies the requirements for customer email hash files.
 
 ### File Specifications ###
 
-- Must be a comma-separated value (CSV) file - columns delimited by commas (,)
+- Must be a comma-separated value (CSV) file - fields delimited by commas (,)
 - Rows separated by newline (\n) characters
-- Fields encapsulated with double quotation (") character
+- All non-numeric fields encapsulated with double quotation (") character
 - UTF-8 encoding
-- Include header ("EmailHash") as first line of file (see [File Contents](#file-contents) for description of each column)
+- Include header ("EmailHash") as first line of file (see [File Contents](#file-contents) for description of each field)
 
 
 ### File Contents ###
 
 Each row should be a unique customer email hash.
 
-Below is a detailed description of each column (see [Customer File Sample](./examples/customer_file_sample.csv) for sample file):
+Below is a detailed description of each field (see [Customer File Sample](./examples/customer_file_sample.csv) for sample file):
 
 
 Header Name | Type | Description | Required?
