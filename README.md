@@ -6,3 +6,6 @@ Technical Documentation Library
 
 ### [Email Hashing](./email-hashing/README.md) ###
 Email hashing methodology and instructions, example code, and testing data.
+
+### [File Formats](./file-formats/README.md) ###
+File format requirements and example data.
