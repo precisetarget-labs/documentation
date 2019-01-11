@@ -1,5 +1,5 @@
 CREATE TABLE email_test (email VARCHAR(512));
-INSERT email_test VALUES
+INSERT INTO email_test VALUES
     ('John.Doe@example.com'),
     ('Pelé@example.com'),
     ('δοκιμή@παράδειγμα.δοκιμή'),

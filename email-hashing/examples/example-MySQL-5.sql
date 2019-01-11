@@ -10,5 +10,5 @@ INSERT INTO email_test VALUES
 
 SELECT
   email,
-  SHA2(LOWER(LTRIM(RTRIM(email))), '256')
+  SHA2(LOWER(LTRIM(RTRIM(email))), '256') AS email_hash
   FROM email_test;

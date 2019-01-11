@@ -28,6 +28,7 @@ Although it may not be necessary to encode emails in UTF-8 currently, it is impo
 
 Here are some examples in various dialects of SQL and programming languages that fulfill the requirements above.
 
+
 ### [MS SQL Server 2014](./examples/example-MS-SQL-Server-2014.sql) ###
 
 ```sql
@@ -44,6 +45,15 @@ SELECT
   email,
   SHA2(LOWER(LTRIM(RTRIM(email))), '256')
   FROM email_test;
+```
+
+### [Oracle 12](./examples/example-Oracle-12.sql) ###
+
+```sql
+SELECT
+  email,
+  SYS.DBMS_CRYPTO.HASH(UTL_I18N.STRING_TO_RAW(LOWER(LTRIM(RTRIM(email))), 'AL32UTF8'), 4 /* DBMS_CRYPTO.HASH_SH256 */) AS email_hash
+  from email_test;
 ```
 
 ### [PostgresSQL 9](./examples/example-PostgresSQL-9.sql) ###
